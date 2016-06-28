@@ -7,7 +7,6 @@ module.exports = function(app){
       templateUrl: './templates/cowsay/text_form.html',
       require: '^^ngController',
       link: function($scope, elem, attr, controller) {
-        console.log(controller);
         $scope.submit = function(str) {
           controller.cow = controller.thecowsays(str.body);
         };
