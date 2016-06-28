@@ -6,8 +6,7 @@ const clean = require('gulp-clean');
 
 const paths = {
   js: __dirname + '/app/**/*.js',
-  html: __dirname + '/app/index.html',
-  css: __dirname + '/app/**/*.css'
+  html: __dirname + '/app/**/*.html'
 };
 
 gulp.task('clean', ()=>{

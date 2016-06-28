@@ -2,12 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="./style.css">
+
     <title>Cowsay services</title>
   </head>
   <body ng-app="CowApp">
-    <main ng-controller="CowController as cowsctrl">
-      <pre>{{cows.cow}}</pre>
+    <main ng-controller="CowController as cows">
+      <pre>
+        <h2>This is what a cow says:</h2>
+        {{cows.message}}
+      </pre>
+      <form ng-sumbit="submit">
+        <input type="text" placeholder="what does a cow say"/>
+        <button type="submit" name="button">Change what the cow says</button>
+      </form>
 
     </main>
 

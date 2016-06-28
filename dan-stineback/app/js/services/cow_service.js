@@ -1,8 +1,9 @@
 'use strict';
+const cowsay = require('cowsay-browser');
 module.exports = function(app) {
   app.factory('CowService', function() {
-    const service = {};
-    service.message = 'hello';
-    return service;
+    return cowsay.say({
+      message: 'mooo'
+    });
   });
 };
