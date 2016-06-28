@@ -6,14 +6,14 @@
     <title>Cowsay services</title>
   </head>
   <body ng-app="CowApp">
-    <main ng-controller="CowController as cows">
+    <main ng-controller="CowController as cowctrl">
+      <h2>This is what a cow says:</h2>
       <pre>
-        <h2>This is what a cow says:</h2>
-        {{cows.message}}
+        {{cowctrl.cowdata}}
       </pre>
-      <form ng-sumbit="submit">
-        <input type="text" placeholder="what does a cow say"/>
-        <button type="submit" name="button">Change what the cow says</button>
+      <form ng-submit="cowctrl.cowsay(cowctrl.msg)">
+        <input type="text" ng-model="cowctrl.msg" placeholder="what does a cow say"/>
+        <button type="submit">Change what the cow says</button>
       </form>
 
     </main>
