@@ -1,0 +1,30 @@
+{
+  "name": "cowsay_helper",
+  "version": "1.0.0",
+  "description": "For your first service you will be building a \"helper function\" service. In this case the amazing and spectacular cowsay service. This service should have a cowsay function that will output the next (with proper new lines) in a \"cowsay\" for an extra point create different cow functions that can be called separately and a single function that can call any any of them based upon a  parameter passed into the function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdar22169/cowsay_service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdar22169/cowsay_service/issues"
+  },
+  "homepage": "https://github.com/jdar22169/cowsay_service#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "cowsay-browser": "^1.1.8",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "webpack-stream": "^3.2.0"
+  }
+}
