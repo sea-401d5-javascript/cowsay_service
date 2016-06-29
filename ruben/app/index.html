@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cowsay Service</title>
+</head>
+<body ng-app="CowApp">
+  <main ng-controller="CowController as cowctrl">
+   <h1>{{cowctrl.message}}</h1>
+   <pre>{{cowctrl.testCow}}</pre>
+   <form ng-submit="cowctrl.cowsay(cowctrl.message)">
+     <input type="text" ng-model="cowctrl.message"/>
+     <button type="submit">Change</button>
+   </form>
+ </main>
+  <script src="./bundle.js"></script>
+</body>
+</html>
